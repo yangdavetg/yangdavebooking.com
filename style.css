@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('images/images.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: gold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Stream Section */
+.stream .platforms {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.platform {
+    text-decoration: none;
+    color: white;
+    background: #1a1a1a;
+    padding: 20px 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.platform i {
+    font-size: 24px;
+}
+
+.platform:hover {
+    background: gold;
+    color: black;
+}
+
+/* Booking */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: orange;
+}
+
+#successMessage {
+    margin-top: 15px;
+    color: lightgreen;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    color: gold;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
